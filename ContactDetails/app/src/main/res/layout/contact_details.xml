@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:id="@+id/lay_ContName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#747A85">
+
+        <ImageView
+            android:id="@+id/ic_cont"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#e5e5e5"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/lblcont_name"
+            android:text="Contact Name"
+            android:textSize="23sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_cont"
+            android:paddingLeft="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#FFFFFF"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/lay_ContName"
+        android:layout_marginTop="5dp"/>
+<!--
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/expandableListView">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtMobNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#848B97" />
+
+                <ListView
+                    android:id="@+id/listMobNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txtMobNum"/>
+
+                <TextView
+                    android:id="@+id/txtEmails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:background="#848B97"
+                    android:layout_below="@id/listMobNum"
+                    android:layout_marginTop="5dp" />
+
+                <ListView
+                    android:id="@+id/listEmails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/txtEmails" />
+            </RelativeLayout>
+
+    </ScrollView>
+-->
+
+</RelativeLayout>
